@@ -1,15 +1,15 @@
 {
-  "name": "Smoothie-flex",
+  "name": "32-grupe-smoothies",
   "version": "1.0.0",
-  "description": "",
+  "description": "Simple design to take a look into display:flex properties",
   "main": "index.js",
   "scripts": {
-    "dev": "live-server --port=3000",
+    "dev": "live-server --port=3000 --host=localhost",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "keywords": ["html5", "css3", "flex"],
+  "author": "Rimantas",
+  "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.1"
   }
