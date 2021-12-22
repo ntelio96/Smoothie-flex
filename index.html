@@ -9,61 +9,63 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>  
-    <Header class="container">
-        <img src="./img/logo.png" alt="logo">
+<body>
+    <header class="container">
+        <img src="./img/logo.png" alt="Logo" class="logo">
         <nav class="menu">
-            <a href="">Home</a>
-            <a href="">Smoothies</a>
-            <a href="">Contact Us</a>
+            <a href="#">Home</a>
+            <a href="#">Smoothies</a>
+            <a href="#">Contact us</a>
         </nav>
-        <nav class="icons">
+        <nav class="menu">
             <a href="#" class="fa fa-shopping-basket"></a>
             <a href="#" class="fa fa-search"></a>
         </nav>
         <i class="fa fa-bars hamburger"></i>
-    </Header>
+    </header>
     <main class="container">
         <div class="gallery">
-            <img src="./img/drink.png" alt="drink">
+            <picture>
+                <source media="(max-width: 799px)" srcset="./img/drink-mobile.png">
+                <source media="(min-width: 800px)" srcset="./img/drink.png">
+                <img src="./img/drink.png" alt="Drink">
+            </picture>
             <i class="fa fa-angle-left"></i>
             <i class="fa fa-angle-right"></i>
         </div>
         <div class="text">
             <p class="category">Berries</p>
             <h1 class="title">Strawberry rush</h1>
-            <p class="description">The best blend of strawberries, rasberries and mulberries</p>
+            <p class="description">The best blend of Strawberries, rasberries and mulberries.</p>
             <div class="contains">
                 <div class="list">
-                    <h2 class="list-title">Nutrition benefits</h2>
-                    <ul>
+                    <h2 class="list-title">Nutrition benefits:</h2>
+                    <ul class="list-plus">
                         <li>Vitamin A</li>
                         <li>Vitamin C</li>
                         <li>Citric acid</li>
                     </ul>
                 </div>
+                <div class="list">
+                    <h2 class="list-title">Content:</h2>
+                    <ul class="list-image">
+                        <li>
+                            <img src="./img/braske.png" alt="Strawberries">
+                        </li>
+                        <li>
+                            <img src="./img/aviete.png" alt="Rasberries">
+                        </li>
+                        <li>
+                            <img src="./img/gervuoge.png" alt="Mulberries">
+                        </li>
+                    </ul>
+                </div>
             </div>
-        
-            <div class="list">
-                 <h2 class="list-title">Content</h2>
-                 <ul>
-                    <li>
-                        <img src="./img/braske.png" alt="">
-                    </li>
-                    <li>
-                        <img src="./img/aviete.png" alt="">
-                    </li>
-                    <li>
-                        <img src="./img/gervuoge.png" alt="">
-                    </li>
-                </ul>
-            </div>
+            <form>
+                <input type="hidden" value="strawberry-rush" name="selected-item" id="selected-item">
+                <button type="submit">Add to cart</button>
+            </form>
         </div>
-        <form>
-            <input type="hidden" value="strawberry-rush" name="selected-item" id="selected-item">
-            <button type="submit">Add to cart
-            </button>
-        </form>
     </main>
 </body>
 
