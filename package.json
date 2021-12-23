@@ -1,5 +1,5 @@
 {
-  "name": "32-grupe-smoothies",
+  "name": "Smoothies-flex",
   "version": "1.0.0",
   "description": "Simple design to take a look into display:flex properties",
   "main": "index.js",
@@ -8,7 +8,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": ["html5", "css3", "flex"],
-  "author": "Rimantas",
+  "author": "Mantas",
   "license": "MIT",
   "devDependencies": {
     "live-server": "^1.2.1"
