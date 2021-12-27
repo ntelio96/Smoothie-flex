@@ -4,6 +4,7 @@
 
 :root {
   --primary-color: #ff5e61;
+  --secondary-color: #fcc7d6; 
 }
 
 body {
@@ -36,8 +37,30 @@ main.container {
   margin-right: auto;
 }
 
-.menu {
+.main-menu {
   display: none;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  padding: 20px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transform: translateY(95%);
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0 6px 4px -6px #0004;
+}
+
+.menu-visible .main-menu {
+  display: flex;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
   gap: 20px;
 }
 .menu > a {
@@ -135,7 +158,9 @@ main.container {
 .text .list > .list-image {
   display: flex;
   gap: 10px;
+  flex-wrap: wrap;
   list-style-type: none;
+  
 }
 .text .list-image > li {
   display: flex;
@@ -178,9 +203,17 @@ main.container {
   .container {
     width: 660px;
   }
-  .menu {
+  .main-menu {
     display: flex;
+    flex-direction: row;
+    position: static;
+    transform: translateY(0);
+    box-shadow: none;
   }
+  .main-menu > .menu {
+    flex-direction: row;
+  }
+
   .hamburger {
     display: none;
   }
@@ -189,10 +222,10 @@ main.container {
     flex-direction: row;
   }
   .gallery {
-    width: 60%;
+    width: 55%;
   }
   .text {
-    width: 40%;
+    width: 45%;
   }
 }
 
